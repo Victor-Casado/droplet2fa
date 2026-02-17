@@ -35,7 +35,7 @@ def verify():
            flash ("Bad Code", category='failure')
     else:
        flash("No code inputted", category='failure')
-    return redirect('/')
+    return redirect('/2fa/')
 
 if __name__ == '__main__':
     app.run(port = 5001)

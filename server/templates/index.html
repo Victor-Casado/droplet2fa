@@ -2,7 +2,8 @@
 <head>
   <meta charset="utf-8">
   <title>TOTP</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="icon" href="/2fa/static/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/2fa/static/styles.css">
 </head>
 
 <body>
@@ -15,13 +16,13 @@
 
 <br>
 
-  <form action = "/verifyCode" method="post">
+  <form action = "/2fa/verifyCode" method="post">
    <label for="code">Code Goes Here</label><br>
    <input type="text" id="code" name="code"><br>
      <input type="submit" value="Submit">
  </form>
 <div class="code">
- <img src="./static/qrcode.png" alt="QR Code">
+ <img src="/2fa/static/qrcode.png" alt="QR Code">
 </div>
 </body>
 
